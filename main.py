@@ -1,18 +1,9 @@
 import time
-
 import streamlit as st
-
 from data_creator import movement, latency_count
 
-# movement = []
-#
-#
-# @st.cache
-# def create_data():
-#     for x in range(50):
-#         moves = ['left', 'right', 'up', 'down', 'shoot', 'duck', 'aim']
-#         movement.append(random.choice(moves))
-#         return movement
+#Favicon and page title
+st.set_page_config('Singularity',':video_game:')
 
 
 cols1, cols2, cols3 = st.columns([1, 2, 1])
@@ -28,7 +19,6 @@ with cols3:
 
 st.markdown('----------------')
 
-# cloud_choice = st.selectbox('Choose platforms', ['Normal online gaming', 'Singularity Cloud'])
 
 col4, col5 = st.columns(2)
 
